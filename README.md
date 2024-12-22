@@ -56,7 +56,8 @@ src/
 - change export const URL: string = "http://localhost:8092";
 - change this url according to your backend URL
 
-
+## To Run the Backend Project (Java+Srpingboot):
+- mvn spring-boot:run
 ## To Run the Frontend Project (Angular):
 - cd NoteUI
 - npm i

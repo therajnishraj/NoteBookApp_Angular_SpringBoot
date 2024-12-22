@@ -34,27 +34,27 @@ A Spring Boot project demonstrating CRUD operations using MongoDB as the databas
 
 ## 📂 Project Structure
 src/
- ┣ main/
- ┃ ┣ java/com/example/notebook/
- ┃ ┃ ┣ controller/         # API Controllers
- ┃ ┃ ┣ service/            # Business Logic
- ┃ ┃ ┣ repository/         # MongoDB Repositories
- ┃ ┃ ┗ model/              # Data Models (ModelData, User)
- ┃ ┣ resources/
- ┃ ┃ ┣ application.properties
- ┗ test/
-frontend/
- ┗ src/                   # Angular Frontend for Note CRUD
+ - ┣ main/
+ - ┃ ┣ java/com/example/notebook/
+ - ┃ ┃ ┣ controller/         # API Controllers
+ - ┃ ┃ ┣ service/            # Business Logic
+ - ┃ ┃ ┣ repository/         # MongoDB Repositories
+ - ┃ ┃ ┗ model/              # Data Models (ModelData, User)
+ - ┃ ┣ resources/
+ - ┃ ┃ ┣ application.properties
+ - ┗ test/
+- frontend/
+ - ┗ src/                   # Angular Frontend for Note CRUD
 ## 📂 MongoDB Url configuration
-spring.application.name=note
-spring.data.mongodb.uri=mongodb://localhost:27017/local
-spring.data.mongodb.database=local
-server.port=8092
-jwt.secret = rajnishRaj@#1234
+- spring.application.name=note
+- spring.data.mongodb.uri=mongodb://localhost:27017/local
+- spring.data.mongodb.database=local
+- server.port=8092
+- jwt.secret = rajnishRaj@#1234
 
 ## 📂 UI URL setup
--change export const URL: string = "http://localhost:8092";
-this url according to your backend URL
+- change export const URL: string = "http://localhost:8092";
+- this url according to your backend URL
 
 
 ## To Run the Frontend Project (Angular):

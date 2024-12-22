@@ -54,7 +54,7 @@ src/
 
 ## 📂 UI URL setup
 - change export const URL: string = "http://localhost:8092";
-- this url according to your backend URL
+- change this url according to your backend URL
 
 
 ## To Run the Frontend Project (Angular):

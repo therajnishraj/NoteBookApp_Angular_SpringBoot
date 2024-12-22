@@ -53,8 +53,8 @@ src/
 - jwt.secret = rajnishRaj@#1234
 
 ## 📂 UI URL setup
-- change export const URL: string = "http://localhost:8092";
-- change this url according to your backend URL
+- change URL: string = "http://localhost:8092"; of this file (src/app/utility/common-component/common-url.ts)  
+- change above url according to your backend URL and port (if you have changed the backend application port else no need to change)
 
 ## To Run the Backend Project (Java+Srpingboot):
 - mvn spring-boot:run

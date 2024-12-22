@@ -6,14 +6,21 @@ A Spring Boot project demonstrating CRUD operations using MongoDB as the databas
 
 ---
 
-## 🚀 Features
-- ✅ **CRUD Operations** on `ModelData`  
-- 🔐 JWT-based Authentication (Login & Signup)  
-- 📂 MongoDB Database Integration  
-- 📡 RESTful APIs  
-- 📑 User Management (Password Encode, Decode, and Token Verification)
-- 📂 Perform Crud operation on note(having title and content)
+**🚀 Features**
 
+✅ CRUD Operations on ModelData
+
+🔐 JWT-based Authentication (Login, Signup, Forgot Password, Change Password)
+
+👤 User Management (Create User, Update Profile, Password Encode/Decode, Token Verification)
+
+📝 Note Management – Responsive UI for CRUD operations on Notes
+
+📂 MongoDB Database Integration
+
+📡 RESTful APIs
+
+📱 Responsive UI for managing Notes with authentication
 ---
 
 ## 🛠️ Tech Stack
@@ -22,13 +29,22 @@ A Spring Boot project demonstrating CRUD operations using MongoDB as the databas
 - **MongoDB**  
 - **JWT (Json Web Token)**  
 - **Maven**  
-
+- **Angular (Responsive Frontend)**
 ---
 
 ## 📂 Project Structure
-src/ ┣ main/ ┃ ┣ java/com/example/notebook/ ┃ ┃ ┣ controller/ # API Controllers ┃ ┃ ┣ service/ # Business Logic ┃ ┃ ┣ repository/ # MongoDB Repositories ┃ ┃ ┗ model/ # Data Models (ModelData, User) ┃ ┣ resources/ ┃ ┃ ┣ application.properties ┗ test/
-
-
+src/
+ ┣ main/
+ ┃ ┣ java/com/example/notebook/
+ ┃ ┃ ┣ controller/         # API Controllers
+ ┃ ┃ ┣ service/            # Business Logic
+ ┃ ┃ ┣ repository/         # MongoDB Repositories
+ ┃ ┃ ┗ model/              # Data Models (ModelData, User)
+ ┃ ┣ resources/
+ ┃ ┃ ┣ application.properties
+ ┗ test/
+frontend/
+ ┗ src/                   # Angular Frontend for Note CRUD
 ## 📂 MongoDB Url configuration
 spring.application.name=note
 spring.data.mongodb.uri=mongodb://localhost:27017/local
@@ -39,3 +55,8 @@ jwt.secret = rajnishRaj@#1234
 ## 📂 UI URL setup
 -change export const URL: string = "http://localhost:8092";
 this url according to your backend URL
+
+
+## To Run the Frontend Project (Angular):
+cd NoteUI
+ng serve

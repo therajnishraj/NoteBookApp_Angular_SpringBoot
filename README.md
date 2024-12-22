@@ -58,5 +58,7 @@ this url according to your backend URL
 
 
 ## To Run the Frontend Project (Angular):
-cd NoteUI
-ng serve
+- cd NoteUI
+- npm i
+- ng serve
+- Access the UI at: http://localhost:4200/

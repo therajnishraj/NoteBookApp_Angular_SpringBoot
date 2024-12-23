@@ -75,7 +75,7 @@ src/
 - nvm install 18
 
 - **Check node version**
-- node -v
+ node -v
 
 - **Set Node.js Version 18 as Default:**
 nvm use 18
@@ -92,5 +92,5 @@ npm install -g @angular/cli
 - npm i
 - **Start the project**
 - ng serve
-- **Go to your browser and acess the below URL
+- **Go to your browser and acess the below URL**
 - Access the UI at: http://localhost:4200/

@@ -61,32 +61,36 @@ src/
 
 ## Setup and configuration for Angular Project 
 
-Install NVM (If Not Installed): Run this command to install NVM:
-(NVM is a tool that makes it easy to manage multiple versions of Node.js.)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+- **Install NVM (If Not Installed): Run this command to install NVM:**
+**(NVM is a tool that makes it easy to manage multiple versions of Node.js.)**
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 
-Then activate NVM:
-source ~/.nvm/nvm.sh
+- **Then activate NVM:**
+- source ~/.nvm/nvm.sh
 
-- Check Installed Versions: Verify NVM is installed correctly:
-nvm --version
+- **Check Installed Versions: Verify NVM is installed correctly:**
+- nvm --version
 
-- Install Node.js Version 18:
-nvm install 18
+- **Install Node.js Version 18:**
+- nvm install 18
 
-- check node version
-node -v
+- **Check node version**
+- node -v
 
-- Set Node.js Version 18 as Default:
+- **Set Node.js Version 18 as Default:**
 nvm use 18
 nvm alias default 18
 
-- install Angular CLI globally:
+- **Install Angular CLI globally:**
 npm install -g @angular/cli
 
 
 ## To Run the Frontend Project (Angular):
+- **Go to project**
 - cd NoteUI
+- **Install all dependency of the project**
 - npm i
+- **Start the project**
 - ng serve
+- **Go to your browser and acess the below URL
 - Access the UI at: http://localhost:4200/

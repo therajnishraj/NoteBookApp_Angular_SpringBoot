@@ -48,10 +48,9 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity
                 // dont authenticate this particular request
                 .authorizeRequests()
-                .antMatchers("/api/user/forgotPassword","/api/user/createUser","/api/user/login","/login/**","/login","/signUp", "/summary/getSummaryData",
+                .antMatchers("/api/user/forgotPassword","/api/user/createUser","/api/user/login","/login/**","/login","/signUp",
                         "/actuator/**","/favicon.ico",
-                        "/", "/assets/**", "/public/**", "/index.html", "/*.js", "/*.css", "/.*woff", "/.*woff2",
-                        "/auth/forgetPassword", "/auth/resetPassword","/getByteArrayget/**","/getByteArrayForVideo/**","/forgotPassword/**").permitAll()
+                        "/", "/assets/**", "/public/**", "/index.html", "/*.js", "/*.css", "/.*woff", "/.*woff2").permitAll()
                 .antMatchers(HttpMethod.OPTIONS, "/**")
                 .permitAll().
                 // all other requests need to be authenticated

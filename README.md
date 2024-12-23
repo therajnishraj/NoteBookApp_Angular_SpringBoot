@@ -1,6 +1,6 @@
 # NoteBook
 
-# 📒 Spring Boot CRUD API with MongoDB and JWT Authentication
+# 📒 Spring Boot CRUD API with MongoDB and JWT Authentication and Responsive Angular UI
 
 <br /> A Spring Boot project demonstrating CRUD operations using MongoDB as the database and JWT (JSON Web Token) for authentication.
 

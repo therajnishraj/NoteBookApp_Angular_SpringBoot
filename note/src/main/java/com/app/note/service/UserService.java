@@ -29,20 +29,7 @@ public class UserService {
         return "User registered successfully!";
     }
 
-   /* public String login(String username, String password) {
-        Optional<User> userOptional = userRepository.findByUsername(username);
 
-        if (userOptional.isPresent()) {
-            User user = userOptional.get();
-            
-            // Verify password
-            if (passwordEncoder.matches(password, user.getPassword())) {
-                // Generate JWT Token
-                return jwtUtil.generateToken(username);
-            }
-        }
-        return "Invalid credentials";
-    }*/
    public User createUser(User user) {
        return userRepository.save(user);
    }
@@ -67,7 +54,6 @@ public class UserService {
         return "User not found!";
     }
 
-    // Change password API logic
     public String changePassword(JSONObject request) {
         Optional<User> user = userRepository.findByUsername(request.get("username").toString());
         if (user.isPresent()) {
@@ -75,7 +61,6 @@ public class UserService {
 
             // Verify old password
             if (request.get("oldPassword").toString().equals(existingUser.getPassword())) {
-                // Encode and update new password
                 existingUser.setPassword(request.get("newPassword").toString());
                 userRepository.save(existingUser);
                 return "Password updated successfully!";

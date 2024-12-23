@@ -1,0 +1,54 @@
+<div class="app-container">
+  <header>
+    <app-editor-navbar></app-editor-navbar>
+  </header>
+  <table mat-table [dataSource]="this.noteService.dataSource" class="mat-elevation-z8">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- Title Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+    </ng-container>
+
+    <!-- Content Column -->
+    <ng-container matColumnDef="content">
+      <th mat-header-cell *matHeaderCellDef> Content </th>
+      <td mat-cell *matCellDef="let element"> {{element.content}} </td>
+    </ng-container>
+
+    <!-- CreatedAt Column -->
+    <ng-container matColumnDef="createdAt">
+      <th mat-header-cell *matHeaderCellDef> CreatedAt </th>
+      <td mat-cell *matCellDef="let element"> {{element.createdAt}} </td>
+    </ng-container>
+
+    <!-- UpdatedAt Column -->
+    <ng-container matColumnDef="updatedAt">
+      <th mat-header-cell *matHeaderCellDef> UpdatedAt </th>
+      <td mat-cell *matCellDef="let element"> {{element.updatedAt}} </td>
+    </ng-container>
+
+    <!-- Actions Column (Edit/Delete) -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-icon-button (click)="onEdit(element)">
+          <mat-icon color="primary">edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="onDelete(element)">
+          <mat-icon color="warn">delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Header and Row Definitions -->
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+</div>

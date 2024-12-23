@@ -1,0 +1,32 @@
+<div style="background-color: #004BA0; ">
+    <div class="row" style="margin-right: 0px;">
+        <div class="col" style="color: white;">
+            <img src="assets/img/logo.png" style="height: 42px ;width: 44PX;"> Notebook
+        </div>
+        <div class="col" style="text-align: right;">
+            <button (click)="this.refresh();" class="btn" mat-icon-button matTooltip="">
+                <span class="material-icons icon-black" style="color: white;">
+                    cached
+                </span>
+            </button>
+            <button (click)="this.search();" class="btn" mat-icon-button matTooltip="">
+                <span class="material-icons icon-black" style="color: white;">
+                    search
+                </span>
+            </button>
+            <button (click)="this.addNote();" class="btn" mat-icon-button matTooltip="">
+                <span class="material-icons icon-black" style="color: white;">
+                    add
+                </span>
+            </button>
+            <button (click)="this.changePassord();" class="btn" mat-icon-button matTooltip="">
+                <span class="material-icons icon-black" style="color: white;">
+                    lock_open
+                </span>
+            </button>
+            <button (click)="this.logOut();" class="btn" mat-icon-button matTooltip="" style="color: white;position: relative;
+          bottom: 3px;">Log Out
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="clsBtn">
+  <button class="btn" mat-icon-button matTooltip="" (click)="close()">
+    <span class="material-icons icon-black" style="color: rgb(0, 0, 0);">
+      close
+    </span>
+  </button>
+</div>
+<div class="container">
+  <div class="header">
+    <h2>Create User</h2>
+  </div>
+  <form action="#" method="POST" [formGroup]="form">
+    <input class="txtinput" formControlName="username" type="text" name="username" placeholder="Enter your username"
+      required>
+    <input class="txtinput" formControlName="password" type="password" name="password" placeholder="Enter your password"
+      required>
+    <input class="txtinput" formControlName="confirmpwd" type="email" name="confirmpwd"
+      placeholder="Enter confirm password" required>
+    <div class="header">
+      <button type="submit" (click)="this.createUser()">Create User</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,42 @@
+<div class="row " style="background-color: white;height: 100%; margin: 0px;">
+  <div class="col-md-5" style="display: grid;
+    place-items: center;">
+    <div style="top: 20%;    background-color: white;    padding: 50px;
+        position: absolute;">
+      <div class="row" style="justify-content: center;">
+        <img src="assets/img/logo.png" style="height: 65px ;width: 88px;">
+        <div style="text-align: center;">
+          Notebook
+        </div>
+      </div>
+
+      <form role="form" [formGroup]="form">
+        <div style="
+            top: 70px;">
+          <label for="exampleInputEmail1">Username</label>
+          <input style="border-radius: 0rem;line-height: 0.0;" type="email" class="form-control"
+            formControlName="userId" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+          <label for="exampleInputPassword1">Password</label>
+          <input style="border-radius: 0rem;line-height: 0.0;" type="{{ hidePassword ? 'password' : 'text' }}"
+            class="form-control" formControlName="password" id="exampleInputPassword1" placeholder="Password">
+          <input type="checkbox" (change)="togglePasswordVisibility()">Show Password
+        </div>
+        <div class="row">
+          <a href="" routerLink="forgetPassword" (click)="this.openForgetPassword()"
+            style="text-align: right;color: red;"> Forgot
+            Password?</a>
+        </div>
+        <div class="row" style="    padding: 15px;">
+          <button type="button" class="btn btn-primary" (click)="this.submit()">Login</button>
+        </div>
+        <div class="row" style="justify-content: center; ">
+          <a href="" routerLink="forgetPassword" (click)="this.openCreateUser()" style="text-align: right;"> New Here?
+            Create An Account?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-7" style="    height: 100%;padding: 0px;">
+    <img src="assets/img/img.png" class="i">
+  </div>
+</div>

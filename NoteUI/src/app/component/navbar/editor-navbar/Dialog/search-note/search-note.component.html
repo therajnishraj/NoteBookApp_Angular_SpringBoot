@@ -1,0 +1,14 @@
+<div style="display:flex;justify-content:end;">
+    <button class="btn" mat-icon-button matTooltip="" (click)="close()">
+        <span class="material-icons icon-black" style="color: rgb(0, 0, 0);">
+            close
+        </span>
+    </button>
+</div>
+<div class="container">
+    <h2>Search Note</h2>
+    <form action="#" method="POST" [formGroup]="form">
+        <input formControlName="id" type="text" name="username" placeholder="Enter id" required>
+        <button type="submit" (click)="this.searchNote()">Search</button>
+    </form>
+</div>

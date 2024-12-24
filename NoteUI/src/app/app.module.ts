@@ -30,7 +30,7 @@ import { SearchNoteComponent } from './component/navbar/editor-navbar/Dialog/sea
     BrowserAnimationsModule,
     HttpClientModule,
     NgxSpinnerModule,
-  
+
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptorService, multi: true },

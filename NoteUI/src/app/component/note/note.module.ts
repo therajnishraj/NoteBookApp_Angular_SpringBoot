@@ -9,9 +9,7 @@ import { CommonComponentModule } from 'src/app/utility/common-component/common-c
 
 @NgModule({
   declarations: [
-  
     EditNoteComponent,
-    EditNoteComponent
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -10,13 +10,16 @@ import { NoteService } from 'src/app/service/note.service';
   styleUrls: ['./edit-note.component.scss']
 })
 export class EditNoteComponent implements OnInit {
+  
+
   form: FormGroup = new FormGroup({});
   noteData: any;
   constructor(private formBuilder: FormBuilder,
     private _snackBar: MatSnackBar,
     public noteService: NoteService,
     @Inject(MAT_DIALOG_DATA) public value: any,
-    public dialogRef: MatDialogRef<EditNoteComponent>,) {
+    public dialogRef: MatDialogRef<EditNoteComponent>,
+  ) {
     this.noteData = value;
     console.log(this.noteData);
     this.createForm();

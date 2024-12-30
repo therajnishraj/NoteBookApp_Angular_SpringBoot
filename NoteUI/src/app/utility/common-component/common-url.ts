@@ -1,7 +1,6 @@
 export const URL: string = "http://localhost:8092";
 // export const URL: string = "http://192.168.10.42:8080/ncollectorqc";
 // export const URL: string = "http://192.168.20.73:8080/ncollectorqc";
-// export const URL: string = "http://192.168.20.56:8092/";
 
 export const LOGIN: string = URL + "/api/user/login";
 export const GET_ALL_NOTES_LIST: string = URL + "/api/note/getAllNote";

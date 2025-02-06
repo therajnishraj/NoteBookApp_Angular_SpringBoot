@@ -78,10 +78,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "NcollectorUI1:build:production"
+              "browserTarget": "NoteUI:build:production"
             },
             "development": {
-              "browserTarget": "NcollectorUI1:build:development"
+              "browserTarget": "NoteUI:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,7 +89,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "NcollectorUI1:build"
+            "browserTarget": "NoteUI:build"
           }
         },
         "test": {
@@ -114,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "NcollectorUI1"
+  "defaultProject": "NoteUI"
 }

@@ -37,6 +37,7 @@ public class UserController {
         User myuser=userService.validateUser(user.get("username").toString());
         if(Objects.isNull(myuser)){
             jsonObject.put("Error","Invalid Username Or Password");
+            jsonObject.put("success",false);
             return  new ResponseEntity(jsonObject, HttpStatus.OK);
         }
 
@@ -49,6 +50,7 @@ public class UserController {
             UserDetails userDetails=loginUserDetailsService.loadUserByUsername(user.get("username").toString());
 
         jsonObject.put("token",jwtUtilService.generateToken(userDetails));
+        jsonObject.put("success",true);
 //        jsonObject.put("usertype",userService.getUserType(user.getName()));
         //find usertype
         return new ResponseEntity(jsonObject, HttpStatus.OK);

@@ -63,7 +63,8 @@ public class JwtUtilService implements Serializable {
         System.out.println("Expiry token time");
         System.out.println(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY));
         return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY)).signWith(SignatureAlgorithm.HS512, secret).compact();
+//                .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY)).signWith(SignatureAlgorithm.HS512, secret).compact();
+                .setExpiration(new Date(System.currentTimeMillis() + JWT_TOKEN_VALIDITY)).signWith(SignatureAlgorithm.HS256, secret).compact();
     }
 
     public Boolean canTokenBeRefreshed(String token) {

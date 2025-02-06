@@ -28,6 +28,7 @@ public class NoteService {
     }
 
     public Note update(String id, Note modelData) {
+        noteRepo.findById(id);
         if (noteRepo.existsById(id)) {
             modelData.setId(id);
             modelData.setUpdatedAt(Instant.now());

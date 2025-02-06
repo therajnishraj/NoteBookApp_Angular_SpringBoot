@@ -12,7 +12,9 @@
 	<artifactId>note</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>note</name>
+	<packaging>war</packaging>
 	<description>Application for Note Taking</description>
+
 	<url/>
 	<licenses>
 		<license/>
@@ -29,6 +31,31 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	<profiles>
+
+
+
+
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<build.profile.id>dev</build.profile.id>
+				<profileActive>dev</profileActive>
+			</properties>
+		</profile>
+		<profile>
+			<id>live</id>
+			<properties>
+				<build.profile.id>live</build.profile.id>
+				<profileActive>live</profileActive>
+			</properties>
+		</profile>
+
+
+	</profiles>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -105,6 +132,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>reactapp</finalName>
 	</build>
 
 </project>

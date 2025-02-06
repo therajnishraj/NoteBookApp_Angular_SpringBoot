@@ -8,11 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { UrlService } from './service/url.service';
 import { BasicAuthInterceptorService } from './utility/basic-auth-interceptor.service';
-import { NgxSpinnerModule } from 'ngx-spinner';
 import { ChangePasswordComponent } from './component/navbar/editor-navbar/Dialog/change-password/change-password.component';
 import { NoteComponent } from './component/note/note.component';
 import { AddNoteComponent } from './component/navbar/editor-navbar/Dialog/add-note/add-note.component';
 import { SearchNoteComponent } from './component/navbar/editor-navbar/Dialog/search-note/search-note.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { SearchNoteComponent } from './component/navbar/editor-navbar/Dialog/sea
     CommonComponentModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgxSpinnerModule,
+    NgxSpinnerModule
 
   ],
   providers: [

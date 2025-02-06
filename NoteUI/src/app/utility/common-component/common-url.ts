@@ -1,4 +1,5 @@
-export const URL: string = "http://localhost:8092";
+// export const URL: string = "http://localhost:8092";
+export const URL: string = "https://notebookbackend-2lgi.onrender.com";
 // export const URL: string = "http://192.168.10.42:8080/ncollectorqc";
 // export const URL: string = "http://192.168.20.73:8080/ncollectorqc";
 

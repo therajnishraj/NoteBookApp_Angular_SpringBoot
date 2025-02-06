@@ -2,18 +2,18 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~material-icons/iconfont/material-icons.css";
 
-@import "~@angular/material/theming";
+// @import "~@angular/material/theming";
 // Import the desired color palettes and themes
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 @import "~bootstrap/dist/css/bootstrap.css";
 // Define your custom theme
-$custom-primary: mat-palette($mat-indigo);
-$custom-accent: mat-palette($mat-pink, A200);
-$custom-theme: mat-light-theme($custom-primary, $custom-accent);
+// $custom-primary: mat-palette($mat-indigo);
+// $custom-accent: mat-palette($mat-pink, A200);
+// $custom-theme: mat-light-theme($custom-primary, $custom-accent);
 
 // Apply the custom theme to the Angular Material components
-@include angular-material-theme($custom-theme);
+// @include angular-material-theme($custom-theme);
 
 /* You can add global styles to this file, and also import other style files */
 

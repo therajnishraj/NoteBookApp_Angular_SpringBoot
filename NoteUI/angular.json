@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NcollectorUI1": {
+    "NoteUI": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {

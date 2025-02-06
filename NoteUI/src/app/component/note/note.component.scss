@@ -1,4 +1,53 @@
-table {
-    width: 100%;
+.tblcls {
+  width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+/* Ensure table and content is responsive */
+@media (max-width: 685px) {
+  .mat-elevation-z8 {
+    font-size: 12px; /* Smaller font size */
   }
-  
+
+  .tblcls table {
+    width: 100%;
+    table-layout: fixed;
+    overflow-x: auto; /* Allow horizontal scroll if content overflows */
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: center;
+    // white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  td.mat-cell {
+    min-width: 70px; /* Ensure minimum cell width to avoid squeezing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  td.mat-cell button.mat-icon-button {
+    width: 35px;   /* Ensure buttons have a large enough click area */
+    height: 35px;
+    font-size: 18px; /* Bigger icons */
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  /* Stacking the buttons vertically for small screens */
+  td.mat-cell button.mat-icon-button {
+    margin: 2px;  /* Reduce margin between buttons */
+  }
+
+  /* Wrap buttons into multiple lines if necessary on very small screens */
+  td.mat-cell button.mat-icon-button {
+    display: block;
+    margin: 5px auto;
+  }
+}
